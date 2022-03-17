@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "646215925080",
+    "project_id": "fir-login-smitbatch",
+    "storage_bucket": "fir-login-smitbatch.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:646215925080:android:268338fa2effe4abbcf92d",
+        "android_client_info": {
+          "package_name": "com.example.sep17module"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "646215925080-u7ic2ab84uk558m3m94mmuhppv4uplvb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBfBMe-cGa_pNC6yjsr5axeKcjwOKPvhfw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "646215925080-u7ic2ab84uk558m3m94mmuhppv4uplvb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.sep17module">
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the "MyLocation" functionality.
+    -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:hardwareAccelerated="true"
+        android:theme="@style/Theme.Sep17Module"
+        android:usesCleartextTraffic="true"
+        tools:ignore="CoarseFineLocation">
+        <activity
+            android:name=".animations.MyAnimationActivity"
+            android:exported="true" >
+        </activity>
+
+        <service
+            android:name=".service.PlaySongService"
+            android:enabled="true" />
+        <service
+            android:name=".service.DownloadService"
+            android:enabled="true" />
+
+        <activity
+            android:name=".service.MyServiceActivity"
+            android:exported="true">
+
+        </activity>
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".googleMap.MapsActivity"
+            android:exported="true"
+            android:label="@string/title_activity_maps"></activity>
+        <activity
+            android:name=".get_image_from_internal_to_imagevview.GetImageActivity"
+            android:exported="true" />
+        <activity
+            android:name=".externalStorage_permission_API30.StoragePermissionActivity"
+            android:exported="true" />
+        <activity
+            android:name=".crud_operation_firebase.FirebaseHostActivity"
+            android:exported="true" />
+        <activity
+            android:name=".real_time_database_firebase.RealTimeDatabaseActivity"
+            android:exported="true" />
+        <activity
+            android:name=".cloudMessaging_firebase.MyCloudMessageActivity"
+            android:exported="true" />
+
+        <service
+            android:name=".cloudMessaging_firebase.MyFirebaseMessageClass"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name=".authentication_firebase_cloud.MyLoginActivity"
+            android:exported="true" />
+        <activity
+            android:name=".covid_19_data.Covid19DataActivity"
+            android:exported="true" />
+        <activity
+            android:name=".retrofit_local_server_xampp.RetrofitHostActivity"
+            android:exported="true" />
+        <activity
+            android:name=".retrofit.MyRetroActivity"
+            android:exported="true" />
+        <activity
+            android:name=".getJson_from_asset.FromAssetActivity"
+            android:exported="true" />
+        <activity
+            android:name=".json_data.server.GetJsonActivity"
+            android:exported="true" />
+        <activity
+            android:name=".login_register_room.AuthenticationActivity"
+            android:exported="true" />
+        <activity
+            android:name=".textToSpeech.MyTextToSpeechActivity"
+            android:exported="true" />
+        <activity
+            android:name=".validateEmail.ValidateActivity"
+            android:exported="true" />
+        <activity
+            android:name=".patternLock.CheckPatternActivity"
+            android:exported="false" />
+        <activity
+            android:name=".patternLock.InsertPatternActivity"
+            android:exported="true" />
+        <activity
+            android:name=".patternLock.MyPatternActivity"
+            android:exported="false" />
+        <activity
+            android:name=".mvvm.MyMvvmActivity"
+            android:exported="true" />
+        <activity
+            android:name=".recyclerView_Searchbar.MyRecyclerSearchActivity"
+            android:exported="true" />
+        <activity
+            android:name=".recyclerView_revision.MyRecyclerView"
+            android:exported="true" />
+        <activity
+            android:name=".relam_database_internal.MyRealmDatabaseActivity"
+            android:exported="true" />
+        <activity
+            android:name=".externalStorage.MyExternalStorageActivity"
+            android:exported="true" />
+        <activity
+            android:name=".navigation_drawer.MyDrawerActivity"
+            android:exported="true" />
+        <activity
+            android:name=".permission.MyPermissionActivity"
+            android:exported="true" />
+        <activity
+            android:name=".pull_to_refresh.PullActivity"
+            android:exported="true" />
+        <activity
+            android:name=".room_sql_internal_database.AddStudentDataActivity"
+            android:exported="true" />
+        <activity
+            android:name=".room_sql_internal_database.MySqlActivity"
+            android:exported="true" />
+        <activity
+            android:name=".oneTimeLogin.DashBoardActivity"
+            android:exported="true" />
+        <activity
+            android:name=".oneTimeLogin.OneTimeActivity"
+            android:exported="true" />
+        <activity
+            android:name=".storage.MyStorageActivity"
+            android:exported="true" />
+        <activity
+            android:name=".recyclerview.StudentActivity"
+            android:exported="true" />
+        <activity
+            android:name=".databinding.DatabindingActivity"
+            android:exported="true" />
+        <activity
+            android:name=".OriginalActivity"
+            android:exported="false" />
+        <activity
+            android:name=".bottom_sheet_another.GoaActivity"
+            android:exported="true" />
+        <activity
+            android:name=".bottom_sheet.BottomSheetActivity"
+            android:exported="true" />
+        <activity
+            android:name=".BottomAppbarActivity"
+            android:exported="true" />
+        <activity
+            android:name=".CustomAssistButtonActivity"
+            android:exported="true" />
+        <activity
+            android:name=".toast.CustomToastActivity"
+            android:exported="true" />
+        <activity
+            android:name=".dialog.MultiValueSelectCheckBoxActivity"
+            android:exported="false" />
+        <activity
+            android:name=".dialog.HelloDialogActivity"
+            android:exported="true" />
+        <activity
+            android:name=".RatingBar"
+            android:exported="true" />
+        <activity
+            android:name=".dialog.CustomDialog"
+            android:exported="true" />
+        <activity
+            android:name=".progressDialog.ProgressDiallogNewActivity"
+            android:exported="true" />
+        <activity
+            android:name=".spinnerPackage.MySpinnerActivity"
+            android:exported="true" />
+        <activity
+            android:name=".dateTimePicker.DateTimePickerActivity"
+            android:exported="true" />
+        <activity
+            android:name=".revision.AutoCompleteActivity"
+            android:exported="true" />
+        <activity
+            android:name=".dialog.ProgressDialogActivity"
+            android:exported="true" />
+        <activity
+            android:name=".picker.DataPickerActivity"
+            android:exported="true" />
+        <activity
+            android:name=".spinner.SpinnerActivity"
+            android:exported="true" />
+        <activity
+            android:name=".chips.ChipsActivity"
+            android:exported="true" />
+        <activity
+            android:name=".revision.SeekbarDemoActivity"
+            android:exported="true" />
+        <activity
+            android:name=".revision.SplashScreenDemoActivity"
+            android:exported="true"
+            android:theme="@style/BlueStyle" />
+        <activity
+            android:name=".listView.ListViewActivity"
+            android:exported="true" />
+        <activity
+            android:name=".WebViewActivity"
+            android:exported="true" />
+        <activity
+            android:name=".seekBar.SeekBarActivity"
+            android:exported="true" />
+        <activity
+            android:name=".radio_button.RadioButtonActivity"
+            android:exported="true" />
+        <activity
+            android:name=".checkBox.CheckBoxNewActivity"
+            android:exported="true" />
+        <activity
+            android:name=".checkBox.CheckBoxActivity"
+            android:exported="true" />
+        <activity
+            android:name=".SplashScreenActivity"
+            android:exported="true" />
+        <activity
+            android:name=".dialog.MyDialogActivity"
+            android:exported="true" />
+        <activity
+            android:name=".my_menu.MyMenuActivity"
+            android:exported="true" />
+        <activity
+            android:name=".pass_object_fragment.MyHolderActivity"
+            android:exported="true" />
+        <activity
+            android:name=".binding_pass_object_activity.HiActivity"
+            android:exported="true" />
+        <activity
+            android:name=".binding_pass_object_activity.HelloActivity"
+            android:exported="true" />
+        <activity
+            android:name=".dialog.DialogDemoActivity"
+            android:exported="true" />
+        <activity
+            android:name=".passObject.AnotherHolderActivity"
+            android:exported="true" />
+        <activity
+            android:name=".menu.MenuDemoActivity"
+            android:exported="true" />
+        <activity
+            android:name=".layout_related.DemoActiviity"
+            android:exported="true" />
+        <activity
+            android:name=".fragment_switching.HolderActivity"
+            android:exported="true" />
+        <activity
+            android:name=".switching.FirstActivity"
+            android:exported="true" >
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".switching.SecondActivity"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" />
+    </application>
+
+</manifest>

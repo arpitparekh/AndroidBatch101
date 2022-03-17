@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".externalStorage.MyExternalStorageActivity">
+
+    <EditText
+        android:id="@+id/edtExtString"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="19dp"
+        android:layout_marginBottom="42dp"
+        android:ems="10"
+        android:hint="Enter String"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/btnStoreExt"
+        app:layout_constraintStart_toStartOf="@+id/btnStoreExt" />
+
+    <Button
+        android:id="@+id/btnStoreExt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="174dp"
+        android:layout_marginBottom="175dp"
+        android:text="Store String in External"
+        app:layout_constraintBottom_toTopOf="@+id/tvReadString"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnReadExt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="21dp"
+        android:text="Read From External"
+        app:layout_constraintEnd_toEndOf="@+id/btnStoreExt"
+        app:layout_constraintTop_toBottomOf="@+id/btnStoreExt" />
+
+    <TextView
+        android:id="@+id/tvReadString"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="307dp"
+        android:background="#D8FFDA"
+        android:textSize="30dp"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+<!--    <ListView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:entries="@array/myArray"-->
+</androidx.constraintlayout.widget.ConstraintLayout>

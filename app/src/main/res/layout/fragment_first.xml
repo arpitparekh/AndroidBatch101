@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment_switching.FirstFragment"
+    android:background="#29B6F6">
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnFragmentOne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:layout_gravity="center"
+        app:icon="@drawable/ic_verified"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#29B6F6"
+        android:layout_gravity="center"
+        android:layout_marginTop="100dp"
+        app:startIconDrawable="@drawable/ic_verified">
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:background="#29B6F6"
+            android:hint="Enter Number"
+            android:id="@+id/edtMaterial"
+            android:gravity="center"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+</FrameLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action1"
+        android:icon="@drawable/ic_yoga"
+        android:title="Car"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/action2"
+        android:icon="@drawable/ic_verified"
+        android:title="Bike"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/action3"
+        android:icon="@drawable/ic_settings"
+        android:title="Plane"/>
+    <item
+        android:id="@+id/action4"
+        android:icon="@mipmap/ic_launcher"
+        android:title="Bicycle"/>
+</menu>

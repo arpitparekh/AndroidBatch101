@@ -1,0 +1,27 @@
+{
+    "data": [
+        {
+            "age": "34",
+            "name": "smit"
+        },
+        {
+            "age": "30",
+            "name": "aman"
+        },
+        {
+            "age": "31",
+            "name": "moin"
+        },
+        {
+            "age": "56",
+            "name": "hemang"
+        },
+        {
+            "address": {
+                "city": "ahmedabad",
+                "state": "gujarat",
+                "population": "45555555"
+            }
+        }
+    ]
+}

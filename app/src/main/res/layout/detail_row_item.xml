@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+            <variable
+                name="data"
+                type="com.example.sep17module.recyclerview.Fun" />
+    </data>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="30dp"
+        app:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#43A047"
+            android:id="@+id/linear">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@{data.name}"
+                android:textSize="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                tools:layout_editor_absoluteX="164dp"
+                tools:layout_editor_absoluteY="40dp" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@{data.email}"
+                android:textSize="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                tools:layout_editor_absoluteX="164dp"
+                tools:layout_editor_absoluteY="82dp" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@{data.number}"
+                android:textSize="20dp"
+                android:maxLength="10"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                tools:layout_editor_absoluteX="164dp"
+                tools:layout_editor_absoluteY="125dp"
+                android:layout_marginBottom="20dp"/>
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+</layout>
