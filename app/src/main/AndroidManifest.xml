@@ -192,9 +192,6 @@
             android:name=".dialog.HelloDialogActivity"
             android:exported="true" />
         <activity
-            android:name=".RatingBar"
-            android:exported="true" />
-        <activity
             android:name=".dialog.CustomDialog"
             android:exported="true" />
         <activity
